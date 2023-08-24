@@ -1,7 +1,12 @@
-const buttonShare = document.getElementById('button-share')
+const buttonShare = document.getElementById("button-share");
+const userCardSection = document.querySelector('.user-card-section')
 
 function buttonShareHandler() {
-    console.log ('click')
+  
+    (userCardSection.style.backgroundColor === 'var(--very-dark-grayish-blue)') ?
+        userCardSection.style.backgroundColor = 'white'
+        :
+        userCardSection.style.backgroundColor = 'var(--very-dark-grayish-blue)';
 }
 
-buttonShare.addEventListener ('click', buttonShareHandler)
+buttonShare.addEventListener("click", buttonShareHandler);
