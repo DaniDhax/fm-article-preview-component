@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+
+:root {
+  /* COLOR *
+  /* Primary */
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: rgb(227, 234, 242);
+
+  /* ? FONTS */
+  --ff-manrope: "Manrope", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--ff-manrope);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-grayish-blue);
+}
+
+.container {
+    border-radius: 15px;
+    width: 320px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.image-section {
+    height: 196px;
+    background-image: url(./images/drawers.jpg);
+    background-position-x: center;
+    background-position-y: -16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.description-section {
+    margin: 15px 30px;
+}
+
+.description-section h1 {
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+    font-size: 1.55rem;
+}
+
+.description-section p {
+    color: var(--desaturated-dark-blue);
+    font-size: 1.3rem;
+}
+
+.user-card-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    padding-bottom: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.user-card-section .avatar {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-image: url(./images/avatar-michelle.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.user p {
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.user span {
+    display: block;
+    font-weight: 400;
+    color: var(--desaturated-dark-blue);
+    font-size: 1.27rem;
+}
+
+.user-card-section button {
+    border: none;
+    background-color: var(--light-grayish-blue);
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+@media (min-width: 1000px) {
+
+
+
+
+}
