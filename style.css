@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 
 :root {
   /* COLOR *
@@ -19,124 +18,156 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--light-grayish-blue);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-grayish-blue);
 }
 
 .container {
-    border-radius: 10px;
-    width: 320px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+  border-radius: 10px;
+  width: 320px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
 
 .image-section {
-    height: 196px;
-    background-image: url(./images/drawers.jpg);
-    background-position-x: center;
-    background-position-y: -16px;
-    background-size: cover;
-    background-repeat: no-repeat;
+  height: 196px;
+  background-image: url(./images/drawers.jpg);
+  background-position-x: center;
+  background-position-y: -16px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .description-section {
-    margin: 15px 30px 5px 30px;
+  margin: 15px 30px 5px 30px;
 }
 
 .description-section h1 {
-    color: var(--very-dark-grayish-blue);
-    font-weight: 700;
-    font-size: 1.55rem;
+  color: var(--very-dark-grayish-blue);
+  font-weight: 700;
+  font-size: 1.55rem;
 }
 
 .description-section p {
-    color: var(--desaturated-dark-blue);
-    font-size: 1.3rem;
+  color: var(--desaturated-dark-blue);
+  font-size: 1.3rem;
 }
 
 .user-card-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 30px;
 }
 
 .user {
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  
+}
+
+.mobile-social-media-div {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  display: none;
+}
+
+.mobile-social-media-div p {
+  color:var(--light-grayish-blue);
+  letter-spacing: 0.5rem;
+  font-size: 1.2rem;
+  padding-right: 5px;
+}
+
+.social-media-icon {
+  height: 20px;
+  width: 20px;
+  background-color: var(--very-dark-grayish-blue);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.facebook {
+  background-image: url(./images/icon-facebook.svg);
+}
+
+.twitter {
+  background-image: url(./images/icon-twitter.svg);
+}
+
+.pinterest {
+  background-image: url(./images/icon-pinterest.svg);
 }
 
 .user-card-section .avatar {
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    background-image: url(./images/avatar-michelle.jpg);
-    background-position: center;
-    background-size: cover;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-image: url(./images/avatar-michelle.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .user p {
-    color: var(--very-dark-grayish-blue);
-    font-weight: 700;
-    font-size: 1.3rem;
+  color: var(--very-dark-grayish-blue);
+  font-weight: 700;
+  font-size: 1.3rem;
 }
 
 .user span {
-    display: block;
-    font-weight: 400;
-    color: var(--desaturated-dark-blue);
-    font-size: 1.27rem;
+  display: block;
+  font-weight: 400;
+  color: var(--desaturated-dark-blue);
+  font-size: 1.27rem;
 }
 
 .user-card-section button {
-    border: none;
-    background-color: var(--light-grayish-blue);
-    border-radius: 30px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+  border: none;
+  background-color: var(--light-grayish-blue);
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
-
 @media (min-width: 1000px) {
-
-.container {
+  .container {
     width: 655px;
     height: 230px;
     flex-direction: row;
-}
+  }
 
-.image-section {
+  .image-section {
     background-position-y: unset;
     background-position-x: 0px;
     height: 100%;
     width: 90%;
-}
+  }
 
-.description-section {
+  .description-section {
     margin-bottom: 0;
-}
+  }
 
-.user-card-section {
+  .user-card-section {
     padding: 0px 30px;
-}
+  }
 
-.description-section h1 {
+  .description-section h1 {
     font-size: 1.9rem;
-}
+  }
 
-.description-section p {
-    margin: 0
-}
-
-
+  .description-section p {
+    margin: 0;
+  }
 }
