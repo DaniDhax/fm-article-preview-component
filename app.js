@@ -4,6 +4,7 @@ const colorSvg = document.querySelector('#icon-share-svg path');
 const userDiv = document.querySelector('.user');
 const mobileSocialMediaDiv = document.querySelector('.mobile-social-media-div')
 const desktopSocialMediaDiv = document.querySelector('.desktop-social-media-div') 
+const rombo = document.querySelector(".rombo");
 
 function mobileButtonShareHandler() {
     if (userCardSection.style.backgroundColor !== "var(--very-dark-grayish-blue)") {
@@ -22,10 +23,12 @@ function desktopButtonShareHandler() {
         colorSvg.setAttribute('fill', 'white');
         buttonShare.style.backgroundColor = 'var(--very-dark-grayish-blue)';
         desktopSocialMediaDiv.style.display = 'flex'
+        rombo.style.display = 'block'
       } else {
         colorSvg.setAttribute('fill', '#6E8098');
         buttonShare.style.backgroundColor = 'var(--light-grayish-blue)';
         desktopSocialMediaDiv.style.display = 'none'
+        rombo.style.display = 'none'
       }
 }
 
@@ -38,3 +41,4 @@ function buttonShareHandler() {
 }
 
 buttonShare.addEventListener("click", buttonShareHandler);
+

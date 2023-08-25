@@ -97,6 +97,17 @@ body {
   display: none;
 }
 
+.rombo {
+  width: 15px;
+  height: 15px;
+  background-color: var(--very-dark-grayish-blue);
+  position: relative;
+  top: -122px;
+  left: 370px;
+  transform: rotate(45deg);
+  display: none;
+}
+
 .social-media-icon {
   height: 20px;
   width: 20px;
