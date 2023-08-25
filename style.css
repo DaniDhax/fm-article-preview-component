@@ -82,11 +82,19 @@ body {
   display: none;
 }
 
-.mobile-social-media-div p {
-  color:var(--light-grayish-blue);
-  letter-spacing: 0.5rem;
-  font-size: 1.2rem;
-  padding-right: 5px;
+.desktop-social-media-div {
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  width: 222px;
+  height: 50px;
+  background-color: var(--very-dark-grayish-blue);
+  position: absolute;
+  top: 315px;
+  left: 668px;
+  display: none;
 }
 
 .social-media-icon {
@@ -96,6 +104,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.share-icon {
+  color:var(--light-grayish-blue);
+  letter-spacing: 0.5rem;
+  font-size: 1.2rem;
+  padding-right: 5px;
 }
 
 .facebook {
