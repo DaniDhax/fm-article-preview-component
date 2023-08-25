@@ -38,6 +38,7 @@ body {
 }
 
 .image-section {
+  border-radius: 10px 10px 0px 0px;
   height: 196px;
   background-image: url(./images/drawers.jpg);
   background-position-x: center;
@@ -176,6 +177,7 @@ body {
   }
 
   .image-section {
+    border-radius: 10px 0px 0px 10px;
     background-position-y: unset;
     background-position-x: 0px;
     height: 100%;

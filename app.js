@@ -40,5 +40,25 @@ function buttonShareHandler() {
       }
 }
 
+
+//Resetea (recarga) la página cuando cambia entre los tamaños
+//que hemos definido en la media query (100px)
+let previousWidth = window.innerWidth;
+
+function handleResize() {
+  const windowWidth = window.innerWidth;
+
+  // Verificar si hubo un cambio de estado
+  if ((previousWidth < 1000 && windowWidth >= 1000) ||
+      (previousWidth >= 1000 && windowWidth < 1000)) {
+    location.reload();
+  }
+
+  // Actualizar el valor de previousWidth
+  previousWidth = windowWidth;
+}
+
+
 buttonShare.addEventListener("click", buttonShareHandler);
 
+window.addEventListener('resize', handleResize);
